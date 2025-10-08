@@ -1,5 +1,5 @@
 import pandas as pd
-from scipy.stats import f_oneway
+from scipy.stats import f_oneway, kruskal, shapiro, levene
 
 # -------------------------
 # Charger le résumé des 37 datasets
@@ -26,15 +26,28 @@ df_params = pd.DataFrame(list(params))
 df_summary = pd.concat([df_summary, df_params], axis=1)
 
 # -------------------------
-# Fonction test ANOVA
+# Fonction de test statistique automatique
 # -------------------------
-def test_anova(df, param, metric):
+def test_effect(df, param, metric):
+    # Créer les groupes selon le paramètre
     groups = [df[df[param] == v][metric] for v in df[param].unique()]
-    f_val, p_val = f_oneway(*groups)
-    return f_val, p_val
+    
+    # Vérifier normalité de chaque groupe (Shapiro-Wilk)
+    normal = all(len(g) >= 3 and shapiro(g).pvalue > 0.05 for g in groups)
+    
+    # Choix du test
+    if normal:
+        f_val, p_val = f_oneway(*groups)
+        test_name = "ANOVA"
+    else:
+        f_val, p_val = kruskal(*groups)
+        test_name = "Kruskal-Wallis"
+    
+    signif = "oui" if p_val < 0.05 else "non"
+    print(f"{param}: {test_name}, F/H={f_val:.6f}, p={p_val:.12f} → effet significatif ? {signif}")
 
 # -------------------------
-# Tester chaque paramètre pour vitesse et robustesse
+# Tester tous les paramètres pour toutes les métriques
 # -------------------------
 metrics = {
     "Vitesse de généralisation": "val_loss_mean",
@@ -44,23 +57,28 @@ metrics = {
 for metric_name, metric_col in metrics.items():
     print(f"\n=== {metric_name} ===")
     for param in ["percentile", "kernel", "min_area", "blur"]:
-        f_val, p_val = test_anova(df_summary, param, metric_col)
-        signif = "oui" if p_val < 0.05 else "non"
-        print(f"{param}: F={f_val:.3f}, p={p_val:.4f} → effet significatif ? {signif}")
+        test_effect(df_summary, param, metric_col)
 
-df_summary["blur"].value_counts()
-df_summary["percentile"].value_counts()
-df_summary["kernel"].value_counts()
-df_summary.groupby("kernel")["val_loss_mean"].count()
+# -------------------------
+# Valeurs uniques et comptage
+# -------------------------
+print("\nDistribution des paramètres:")
+print("blur:\n", df_summary["blur"].value_counts())
+print("percentile:\n", df_summary["percentile"].value_counts())
+print("kernel:\n", df_summary["kernel"].value_counts())
+print("\nNombre d'échantillons par kernel pour val_loss_mean:")
+print(df_summary.groupby("kernel")["val_loss_mean"].count())
 
-from scipy.stats import shapiro, levene
+# -------------------------
+# Exemple de tests complémentaires pour 'kernel'
+# -------------------------
+kernel_groups = [df_summary[df_summary["kernel"] == v]["val_loss_mean"] for v in df_summary["kernel"].unique()]
 
-# Exemple pour "kernel"
-groups = [df_summary[df_summary["kernel"] == v]["val_loss_mean"] for v in df_summary["kernel"].unique()]
-
-# Normalité des groupes
-for i, g in enumerate(groups):
-    print(f"kernel {i+1} Shapiro:", shapiro(g))
+# Normalité
+for i, g in enumerate(kernel_groups):
+    stat, p = shapiro(g)
+    print(f"kernel {i+1} Shapiro: statistic={stat:.3f}, pvalue={p:.4f}")
 
 # Homogénéité des variances
-print("Levene test:", levene(*groups))
+stat, p = levene(*kernel_groups)
+print(f"Levene test: statistic={stat:.3f}, pvalue={p:.4f}")
