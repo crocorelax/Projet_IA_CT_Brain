@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="79078922-0ee8-49eb-ad71-d051b8718153" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Projet_IA_CT_Brain.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SRC/Analyse_Result.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SRC/Analyze_speed_and_robustness.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SRC/CNN.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SRC/Prepare_Dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SRC/Verify_significativity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SRC/eval.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SRC/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SRC/verify_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Temp_Trash/analysze_effects.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Temp_Trash/heatmap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Temp_Trash/temp.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="33WJ1OHfvGRbLnB4jRAAPtfkqcG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Analyse_Result.executor": "Run",
+    "Python.Analyze_speed_and_robustness.executor": "Run",
+    "Python.CNN.executor": "Run",
+    "Python.Prepare_Dataset.executor": "Run",
+    "Python.Verify_significativity.executor": "Run",
+    "Python.a.executor": "Run",
+    "Python.analysze_effects.executor": "Run",
+    "Python.eval.executor": "Run",
+    "Python.heatmap.executor": "Run",
+    "Python.temp.executor": "Run",
+    "Python.train.executor": "Run",
+    "Python.verify_data.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/lacostea/PycharmProjects/PythonProject1/3D",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lacostea\PycharmProjects\PythonProject1\3D" />
+      <recent name="C:\Users\lacostea\PycharmProjects\PythonProject1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lacostea\PycharmProjects\PythonProject1\SRC" />
+      <recent name="C:\Users\lacostea\PycharmProjects\PythonProject1\Temp_Trash" />
+      <recent name="C:\Users\lacostea\PycharmProjects\PythonProject1\2D" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-PY-252.26199.168" />
+        <option value="bundled-python-sdk-b3d66beaba9a-c6efb3732140-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26199.168" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79078922-0ee8-49eb-ad71-d051b8718153" name="Changes" comment="" />
+      <created>1759426679040</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759426679040</updated>
+      <workItem from="1759426680068" duration="1345000" />
+      <workItem from="1759607190655" duration="46145000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Projet_IA_CT_Brain$heatmap.coverage" NAME="heatmap Coverage Results" MODIFIED="1759782619777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_IA_CT_Brain$Prepare_Dataset.coverage" NAME="Prepare_Dataset Coverage Results" MODIFIED="1759788385277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SRC" />
+    <SUITE FILE_PATH="coverage/Projet_IA_CT_Brain$a.coverage" NAME="a Coverage Results" MODIFIED="1759783165839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject1$Prepare_Dataset.coverage" NAME="Prepare_Dataset Coverage Results" MODIFIED="1759427271333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_IA_CT_Brain$Analyse_Result.coverage" NAME="Analyse_Result Coverage Results" MODIFIED="1759920172716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SRC" />
+    <SUITE FILE_PATH="coverage/Projet_IA_CT_Brain$verify_data.coverage" NAME="verify_data Coverage Results" MODIFIED="1759614413939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_IA_CT_Brain$Analyze_speed_and_robustness.coverage" NAME="Analyze_speed_and_robustness Coverage Results" MODIFIED="1759920103349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SRC" />
+    <SUITE FILE_PATH="coverage/Projet_IA_CT_Brain$temp.coverage" NAME="temp Coverage Results" MODIFIED="1759683755641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_IA_CT_Brain$analysze_effects.coverage" NAME="analysze_effects Coverage Results" MODIFIED="1759782675569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_IA_CT_Brain$Verify_significativity.coverage" NAME="Verify_significativity Coverage Results" MODIFIED="1759920216499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SRC" />
+    <SUITE FILE_PATH="coverage/Projet_IA_CT_Brain$CNN.coverage" NAME="CNN Coverage Results" MODIFIED="1759609934980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_IA_CT_Brain$eval.coverage" NAME="eval Coverage Results" MODIFIED="1759612054655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_IA_CT_Brain$train.coverage" NAME="train Coverage Results" MODIFIED="1759788393567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SRC" />
+  </component>
+</project>
